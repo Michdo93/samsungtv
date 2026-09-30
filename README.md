@@ -1,8 +1,8 @@
-# samsungtv.py – UE55MU6179U lokal steuern
+# samsungtv.py – UE55KU6079U lokal steuern
 
 ## 1. TV einmalig einstellen
 
-| Einstellung | Pfad (Tizen 2017, Bezeichnungen können leicht abweichen) | Wert |
+| Einstellung | Pfad (Tizen 2016, Bezeichnungen können leicht abweichen) | Wert |
 |---|---|---|
 | Zugriffsbenachrichtigung | Einstellungen → Allgemein → Externer Geräte-Manager → Geräteverbindungs-Manager | **Nur beim ersten Mal** |
 | Geräteliste | ebenda → Geräteliste | Client `PythonTVControl` → **Zulassen** |
