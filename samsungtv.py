@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 samsungtv.py – Lokale Steuerung für Samsung Tizen-TVs (2016–2019),
-ausgelegt auf UE55MU6179U (MU-Serie, Modelljahr 2017).
+ausgelegt auf UE55KU6079U (KU-Serie, Modelljahr 2016).
 
 Genutzte Schnittstellen (alle über LAN, keine Cloud nötig):
   * WebSocket-Remote  wss://<tv>:8002 (Token), Fallback ws://<tv>:8001
@@ -446,7 +446,7 @@ class SamsungTV:
             return False
         if self._in_instant_on():
             return False  # antwortet noch im Netz, Bild ist aber aus
-        # 2018+ liefern PowerState, 2017 (MU) nicht -> Erreichbarkeit = an
+        # 2018+ liefern PowerState, 2016/2017 nicht -> Erreichbarkeit = an
         return info.get("device", {}).get("PowerState", "on") == "on"
 
     def power_on(self, timeout: float = 30.0) -> bool:
